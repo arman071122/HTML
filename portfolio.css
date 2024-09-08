@@ -1,0 +1,48 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.258);
+  color: #fff;
+  padding: 10px 20px;
+}
+
+img {
+  height: 130px;
+  width: auto;
+  float: right;
+  margin-right: 20px;
+  margin-top: -86px;
+  object-fit: cover;
+  border: 0.5px solid #000000;
+  border-radius: 50%;
+}
+
+nav {
+  text-align: center;
+  padding: 10px 0;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  text-align: justify;
+}
+
+div {
+  clear: both;
+}
+
+section {
+  width: 94%;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.537);
+  border-radius: 10px;
+}
