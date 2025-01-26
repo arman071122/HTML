@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On Off</title>
+</head>
+
+<body>
+    <img id="light" src="./pics/off.jpg" alt="Strobe Light" width="200" height="300">
+    <br>
+    <button id="onoff" onclick="toggleLight()" style="width: 200px;">On</button>
+
+    <script>
+        function toggleLight() {
+            if (document.getElementById("onoff").innerText == "On") {
+                document.getElementById("light").src = "./pics/on.jpg";
+                document.getElementById("onoff").innerText = "Off";
+            } else {
+                document.getElementById("light").src = "./pics/off.jpg";
+                document.getElementById("onoff").innerText = "On";
+            }
+        }
+    </script>
+</body>
+
+</html>

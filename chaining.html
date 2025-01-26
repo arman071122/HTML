@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaining</title>
+    <script src="./jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("#p1").css("color", "red").slideUp(2000).slideDown(2000);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <p id="p1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem excepturi, harum facilis nisi adipisci
+        labore magni quisquam laboriosam optio! Soluta voluptas consectetur at perferendis illo, nostrum sequi
+        voluptates. Ipsam, quia.
+    </p>
+    <button>Click</button>
+</body>
+
+</html>

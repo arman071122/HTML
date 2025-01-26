@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <script src="./jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#b1").click(function () {
+                $("div").animate({ height: '300px', opacity: '0.3' }, "slow");
+                $("div").animate({ width: '300px', opacity: '1' }, "slow");
+                $("div").animate({ height: '100px', opacity: '0.3' }, "slow");
+                $("div").animate({ width: '100px', opacity: '1' }, "slow");
+            });
+
+            $("#b2").click(function () {
+                $("div").stop();
+                $("div").stop();
+                $("div").stop();
+                $("div").stop();
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <button id="b1">Animation</button>
+    <div style="background-color: rgb(255, 0, 0);height: 100px;width: 100px;position: absolute;"></div>
+    <button id="b2">Stop</button>
+</body>
+
+</html>

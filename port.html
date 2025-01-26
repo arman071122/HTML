@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio2</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="./jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#aboutme").click(function () {
+                $("p").slideToggle();
+            });
+            $("#personal").click(function () {
+                $("#ul1").slideToggle();
+            });
+            $("#edu").click(function () {
+                $("ol").slideToggle();
+            });
+            $("#skills").click(function () {
+                $("#ul2").slideToggle();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <h1>Portfolio</h1>
+
+    <h3 id="aboutme">About Me</h3>
+    <div>
+        <p style="display: none;"> I am a B.Tech Computer Science student (4th year) at APJ Abdul Kalam Technological
+            University, proficient in
+            C,
+            Java, Python, HTML, JavaScript, and CSS. Experience includes an internship at Charlnetic Technologies
+            and development of a web application for KTU activity certificate management. Actively participates in
+            coding competitions and hackathons. Fluent in English, Hindi, Tamil and Malayalam. Seeking opportunities
+            in software development.
+            B.Tech Computer Science student (4th year) at APJ Abdul Kalam Technological
+            University, proficient in C,
+            Java, Python, HTML, JavaScript, and CSS. Experience includes an internship at Charlnetic Technologies
+            and development of a web application for KTU activity certificate management. Actively participates in
+            coding competitions and hackathons. Fluent in English, Hindi, Tamil and Malayalam. Seeking opportunities
+            in software development.
+        </p>
+    </div>
+
+    <h3 id="personal">Personal Details</h3>
+    <div>
+        <ul id="ul1" style="display: none;">
+            <li>Location : Trivandrum</li>
+            <li>Date of Birth : 07/11/2002</li>
+            <li>Phone Number : 8590391871</li>
+            <li>Email : arman071122@gmail.com</li>
+        </ul>
+    </div>
+
+    <h3 id="edu">Education Details</h3>
+    <div>
+        <ol style="display: none;">
+            <li>10th - 93%</li>
+            <li>12th - 83%</li>
+            <li>B.Tech - 7.0</li>
+
+        </ol>
+    </div>
+
+    <h3 id="skills">Skills</h3>
+    <div>
+        <ul id="ul2" style="display: none;">
+            <li>Coding</li>
+            <li>Team Management</li>
+            <li>Web Development</li>
+            <li>Creativity</li>
+            <li>Leadership</li>
+            <li>Problem Solving</li>
+            <li>Communication</li>
+        </ul>
+    </div>
+</body>
+
+</html>

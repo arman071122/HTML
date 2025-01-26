@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+
+<body>
+    <script>
+        var employee = {
+            name: "Arman",
+            age: 22,
+            designation: "manager"
+        }
+        document.write(employee.name, employee.age, employee.designation);
+
+        var emp = new Object;
+        emp.name = "Fijo";
+        emp.age = 22;
+        emp.designation = "CEO"
+        document.write(emp.name, emp.age, emp.designation);
+
+        function Flower(name, color) {
+            this.name = name;
+            this.color = color;
+        }
+
+        let rose = Flower("rose", "pink");
+        document.write(rose.name, rose.color);
+
+
+        for (var x in employee) {
+            var s = employee[x];
+            document.write(s)
+        }
+    </script>
+</body>
+
+</html>

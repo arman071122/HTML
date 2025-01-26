@@ -46,3 +46,13 @@ section {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.537);
   border-radius: 10px;
 }
+
+div {
+  width: 94%;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.537);
+  border-radius: 10px;
+}

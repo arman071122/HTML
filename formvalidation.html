@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+
+<body>
+    <form action="" onsubmit="return valid()">
+        <label for="">Name :</label>
+        <input type="text" id="name">
+        <br><br>
+        <label for="">Password :</label>
+        <input type="text" id="pass">
+        <br><br>
+        <input type="submit">
+    </form>
+    <script>
+        function valid() {
+            let name = document.getElementById("name");
+            let pass = document.getElementById("pass");
+            if (name.value.trim() == "" || pass.value.trim() == "") {
+                alert("Fill cheyyada!!!");
+                name.style.borderColor = "red";
+                pass.style.borderColor = "red";
+                return false;
+            }
+            else {
+                return true;
+            }
+        }
+
+    </script>
+</body>
+
+</html>

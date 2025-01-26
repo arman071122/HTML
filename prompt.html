@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prompt</title>
+</head>
+
+<body>
+    <p id="message"></p>
+    <script>
+        var person = prompt("Please enter your name", "Abcdefg Hij");
+        if (person == null) {
+            document.getElementById("message").innerText = "Entelum enter cheyyada patti";
+        }
+        else if (person == "") {
+            document.getElementById("message").innerText = "Entelum enter cheyyada patti";
+        }
+        else {
+            document.getElementById("message").innerText = "Hello " + person;
+        }
+    </script>
+</body>
+
+</html>

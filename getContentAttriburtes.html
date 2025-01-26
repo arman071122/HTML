@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#b1").click(function () {
+                alert("Text: " + $("p").text());
+            });
+            $("#b2").click(function () {
+                alert("Html: " + $("p").html());
+            });
+            $("#b3").click(function () {
+                alert("Value: " + $("input").val());
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit <b>Arman</b> amet consectetur adipisicing elit. Ea exercitationem nemo voluptatum delectus,
+        laudantium
+        optio magni voluptates incidunt placeat saepe repellat consequuntur veritatis doloribus eum, a inventore itaque
+        quis quibusdam?
+    </p>
+    <button id="b1">Text</button>
+    <button id="b2">Html</button>
+    <button id="b3">Value</button>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome</title>
+</head>
+
+<body>
+    <p id="result">hi</p>
+    <button id="pal" onclick="pali()" style="width: 200px;">check palindrome</button>
+
+    <script>
+        function pali() {
+            var original = 123;
+            var revnum = 0;
+            var num = original;
+
+            while (num > 0) {
+                revnum = revnum * 10 + (num % 10);
+                num = Math.floor(num / 10);
+            }
+            if (original == revnum) {
+                document.getElementById("result").innerText = "yes palindrome";
+            }
+            else {
+                document.getElementById("result").innerText = "not palindrome";
+            }
+        }
+
+    </script>
+</body>
+
+</html>

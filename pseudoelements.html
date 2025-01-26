@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>psuedo_elements</title>
+
+    <style>
+        p::first-line {
+            color: aquamarine;
+        }
+
+        p::selection {
+            background-color: chartreuse;
+        }
+
+        #l1::marker {
+            color: aqua;
+        }
+
+        ::marker {
+            color: chartreuse;
+        }
+
+        p::before {
+            content: url(./pics/friends.png);
+        }
+
+        p::after {
+            content: url(./pics/fblogo.png);
+        }
+    </style>
+</head>
+
+
+<body>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quos dolore architecto, neque aliquid et velit
+        asperiores explicabo perspiciatis. Numquam consequatur ipsam rerum sint soluta aperiam quas similique quam illo.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga quia rem saepe tempora quae ullam provident omnis
+        iusto alias veniam cum, similique pariatur reprehenderit quod quos ut aspernatur animi sed?
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum voluptates laboriosam distinctio expedita quod
+        eligendi suscipit optio fugit. Itaque adipisci minima, nemo aliquid quod commodi. Enim ab provident magni nisi.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt dolores nihil facere accusamus molestias neque
+        eius quo reprehenderit animi et voluptatum quis architecto, reiciendis at delectus fuga molestiae totam tenetur.
+    </p>
+
+    <ul>
+        <li id="l1">first</li>
+        <li>second</li>
+        <li>third</li>
+    </ul>
+
+</body>
+
+</html>

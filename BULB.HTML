@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb on</title>
+
+</head>
+
+<body>
+    <img id="off" src="./pics/off.jpg" alt="">
+    <br>
+    <button onclick="turnon()">on</button>
+    <script>
+        function turnon() {
+            document.getElementById("off").src = "./pics/on.jpg";
+        }
+    </script>
+</body>
+
+</html>

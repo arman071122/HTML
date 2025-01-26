@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fade in fade out</title>
+    <script src="./jquery-3.7.1.js"></script>
+    <script>
+        // $(document).ready(function () {
+        //     $("button").click(function () {
+        //         $("div").fadeOut();
+        //     });
+        // });
+
+        // $(document).ready(function () {
+        //     $("button").click(function () {
+        //         $("div").fadeIn();
+        //     });
+        // });
+
+        // $(document).ready(function () {
+        //     $("button").click(function () {
+        //         $("div").fadeToggle();
+        //     });
+        // });
+
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("div").fadeTo(1000, 0.5);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <button>Click</button>
+    <div>
+        hello guys
+    </div>
+</body>
+
+</html>

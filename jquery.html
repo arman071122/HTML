@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+    <script src="./jquery-3.7.1.js">
+
+    </script>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, animi suscipit ratione quis nihil reiciendis
+        doloremque odio consectetur, saepe repellat earum commodi eligendi tempora eum, vitae error dicta. Explicabo,
+        autem.
+    </p>
+    <input type="text">
+    <button>Hide</button>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $(this).text("Unhide");
+                $("p").hide();
+            });
+        });
+        $(document).ready(function () {
+            $("button").dblclick(function () {
+                $(this).text("Hide")
+                $("p").show();
+            });
+        });
+        // $(document).ready(function () {
+        //     $("button").hover(function () {
+        //         $("p").hide();
+        //     });
+        // });
+        // $(document).ready(function () {
+        //     $("button").mouseleave(function () {
+        //         $("p").show();
+        //     });
+        // });
+        // $(document).ready(function () {
+        //     $("button").mouseenter(function () {
+        //         $("p").hide();
+        //     });
+        // });
+        $(document).ready(function () {
+            $("input").focus(function () {
+                $(this).css("background-color", "yellow");
+            });
+        });
+    </script>
+</body>
+
+</html>

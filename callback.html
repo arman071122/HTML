@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback</title>
+    <script src="./jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function () { //without callback
+            $("#b1").click(function () {
+                $("p").hide(4000);
+                alert("this paragraph is now hidden");
+            });
+        });
+
+        $(document).ready(function () { //with callback
+            $("#b2").click(function () {
+                $("p").hide(4000, function () {
+                    alert("this paragraph is now hidden");
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quas esse? Maiores nisi optio incidunt vero,
+        tempora itaque reprehenderit nesciunt esse voluptatibus alias illum aperiam quos sint quaerat ullam
+        exercitationem?
+    </p>
+    <button id="b1">Noncallback hide</button>
+    <button id="b2">Callback hide</button>
+
+</body>
+
+</html>

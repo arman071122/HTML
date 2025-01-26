@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>math</title>
+</head>
+
+<body>
+    <p id="min">Minimum here</p>
+    <p id="max">Maximum here</p>
+    <p id="random">Random num here</p>
+    <p id="round1">Round of 4.7 here</p>
+    <p id="round2">Round of 4.4 here</p>
+    <p id="ceil">Ceiling of 4.4 here</p>
+    <p id="floor">Floor of 4.4 here</p>
+
+    <button id="minmax" onclick="minmax()" style="width: 200px;">Click here to see min and max</button>
+    <script>
+        function minmax() {
+            document.getElementById("min").innerText = Math.min(0, 150, 30, 20, -8, -200);
+            document.getElementById("max").innerText = Math.max(0, 150, 30, 20, -8, -200);
+            document.getElementById("random").innerText = Math.random();
+            document.getElementById("round1").innerText = Math.round(4.7);
+            document.getElementById("round2").innerText = Math.round(4.4);
+            document.getElementById("ceil").innerText = Math.ceil(4.4);
+            document.getElementById("floor").innerText = Math.floor(4.4);
+        }
+    </script>
+</body>
+
+</html>
